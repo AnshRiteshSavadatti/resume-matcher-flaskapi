@@ -130,8 +130,8 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
 # Load models
-bi_encoder = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
-cross_encoder = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2')
+bi_encoder = SentenceTransformer('sentence-transformers/paraphrase-MiniLM-L6-v2')  # ~80MB
+cross_encoder = CrossEncoder('cross-encoder/stsb-roberta-base')
 
 # CORS middleware setup
 app.add_middleware(
