@@ -1,10 +1,6 @@
 fastapi==0.95.2
-uvicorn[standard]==0.22.0
-torch>=2.1.0
+uvicorn==0.22.0
+torch==2.2.2+cpu
 sentence-transformers==2.2.2
 scipy==1.11.1
-transformers>=4.30.0
-huggingface-hub==0.16.4
-pydantic>=1.10,<2.0
-uvicorn[standard]
-
+pydantic==1.10.13
